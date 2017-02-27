@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.baofeng.mj.videoplugin.ui.view.PanoramVideoPlayerView
+            android:id="@+id/view_playerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.baofeng.mj.videoplugin.ui.view.PlayerBottomView
+            android:id="@+id/view_bottomview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <!-- 播放按钮蒙版-->
+        <LinearLayout
+            android:id="@+id/layout_play_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/imageview_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/mj_detail_play"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mj_dimens_text_middle"
+                android:text="00:10"/>
+        </LinearLayout>
+        <!-- 未安装app，下载蒙版-->
+        <LinearLayout
+            android:id="@+id/layout_play_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mj_dimens_text_large"
+                android:text="@string/mj_string_detail_download_app"/>
+            <TextView
+                android:id="@+id/textview_play_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mj_dimens_text_middle"
+                android:text="@string/mj_string_detail_download_watch"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_play_open"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/textview_play_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mj_dimens_text_middle"
+                android:text="@string/mj_string_detail_download_open"/>
+        </LinearLayout>
+        <!-- 已安装app，打开蒙版-->
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageview_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mj_detail_back"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/detail_open_mojing_ad"
+        android:layout_below="@id/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/details_button_download"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detail_open_mojing_ad"
+        android:scrollbars="none"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_name_textview"
+                style="@style/panorama_detail_title_text_style"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/title_color"
+                android:text="星际迷航超感体验"/>
+
+            <TextView
+                android:id="@+id/detail_grade_textview"
+                android:layout_marginTop="10dp"
+                style="@style/panorama_detail_title_text_style"
+                android:layout_toRightOf="@id/detail_name_textview"
+                android:textColor="@color/auxiliary_yellow_color"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="9.2分"/>
+
+            <TextView
+                android:id="@+id/detail_source_textview"
+                android:layout_below="@id/detail_name_textview"
+                style="@style/panorama_detail_sub_text_style"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="克里斯·埃文斯、海莉·阿特维尔、塞巴斯蒂安·斯坦、雨果·维文"/>
+
+            <com.baofeng.mj.videoplugin.ui.view.ProgressBarView
+                android:id="@+id/detail_download_btn"
+                android:layout_marginTop="10dp"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/detail_source_textview"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/detail_desc_pre"
+                android:layout_below="@id/detail_download_btn"
+                style="@style/detail_title_text_style"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介"/>
+
+            <TextView
+                android:id="@+id/detail_desc_textview"
+                android:layout_below="@id/detail_desc_pre"
+                style="@style/panorama_detail_sub_des_text_style"
+                android:gravity="left"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:lineSpacingExtra="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<com.baofeng.mj.videoplugin.ui.view.ProgressBarView-->
+        <!--android:id="@+id/view_progressbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+    <include
+        android:id="@+id/layout_no_network"
+        layout="@layout/layout_no_network" />
+
+</RelativeLayout>

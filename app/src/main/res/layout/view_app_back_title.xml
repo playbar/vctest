@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/public_title_height">
+
+    <ImageView
+        android:id="@+id/app_title_back_imagebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mj_detail_back"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/app_title_name"
+        android:layout_width="wrap_content"
+        style="@style/app_title_text_style"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_height="@dimen/public_title_height">
+
+        <ImageView
+            android:id="@+id/app_connect_status_light"
+            android:src="@mipmap/handle_red"
+            android:layout_marginEnd="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/app_connect_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按摩椅未连接"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/app_title_go_vr"
+            android:src="@mipmap/nav_icon_invr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:visibility="gone"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

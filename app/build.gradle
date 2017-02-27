@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.baofeng.mj.videoplugin"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        ndk{
+//            platformVersion = 23
+            moduleName = 'viewcore'
+//            toolchain = 'clang'
+            stl         = 'gnustl_static'
+//            cppFlags.addAll(['-std=c++11', '-Wall', '-fno-rtti', '-fno-exceptions'])
+//            CFlags.addAll(['-Wall'])
+//            abiFilters.addAll(['armeabi'])
+            ldLibs 'android', 'log', 'GLESv3', 'EGL'
+            abiFilters "armeabi","armeabi-v7a"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true;
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+    }
+    sourceSets.main{
+        jniLibs.srcDirs =['libs']
+        assets.srcDirs = ['src/main/assets']
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.1.1'
+//    compile project(':MJViewCore')
+//    compile project(':PullToRefreshForMJ')
+    compile files('libs/universalimageloader.jar')
+}

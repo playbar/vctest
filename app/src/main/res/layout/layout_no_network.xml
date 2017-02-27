@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mj_color_detail_gray"
+    android:visibility="gone"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:background="@color/app_title_blue"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_no_network_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mj_detail_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageview_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mj_no_network"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:id="@+id/textview_wifi_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageview_wifi"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/mj_color_detail_message_black"
+        android:textSize="@dimen/mj_dimens_text_middle"
+        android:text="@string/mj_string_network_not_connection"/>
+    <TextView
+        android:id="@+id/textview_reset"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textview_wifi_desc"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/circle_bian"
+        android:textColor="@color/white"
+        android:text="@string/mj_string_network_refresh"/>
+</RelativeLayout>

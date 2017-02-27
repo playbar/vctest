@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <com.baofeng.mj.videoplugin.ui.view.AppTitleBackView
+        android:id="@+id/main_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_title_blue" />
+
+    <RelativeLayout
+        android:id="@+id/layout_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_title_layout"
+        android:background="@mipmap/list_download_bg">
+
+        <ImageView
+            android:id="@+id/main_download_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="72dp"
+            android:background="@mipmap/list_download_logo"/>
+
+        <TextView
+            android:id="@+id/main_download_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_download_logo"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:text="@string/begin_download_tips"
+            android:layout_marginTop="35dp"
+            android:textSize="13sp"/>
+
+        <com.baofeng.mj.videoplugin.ui.view.ProgressBarView
+            android:id="@+id/main_progressbar"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/main_download_tips"
+            android:layout_toRightOf="@id/main_download_logo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_list_grid"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_pic"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/white"
+        android:listSelector="@android:color/transparent"
+        ptr:ptrMode="pullFromEnd" />
+    <include
+        android:id="@+id/layout_no_network"
+        layout="@layout/layout_no_network"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BFtoMJ</string>、
+    <string name="panorama">暴风魔镜</string>
+    <string name="mojing_vr">暴风魔镜VR</string>
+    <string name="mojing_brief">海量全景视频，尽在暴风魔镜</string>
+    <string name="begin_download_tips">获取更多火辣全景资源</string>
+
+    <!--<string name="begin_download_mojing">下载APP</string>-->
+    <!--<string name="downloading_mojing">正在下载</string>-->
+    <!--<string name="open_mojing">打开APP</string>-->
+
+    <!--<string name="dialog_network_tips">您当前使用的非wifi网络，继续下载可能会产生费用，是否继续下载？</string>-->
+    <string name="dialog_network_tips">当前网络为3G，是否继续下载</string>
+    <string name="dialog_download_now">继续下载</string>
+    <string name="dialog_cancal">取消下载</string>
+
+    <string name="install_app">安装APP</string>
+    <string name="download_app">下载</string>
+
+    <string name="mj_string_detail_ready_install">准备安装</string>
+    <string name="mj_string_detail_install">下载APP</string>
+    <string name="mj_string_list_downloading">正在下载</string>
+    <string name="mj_string_download_error">下载失败</string>
+    <string name="mj_string_detail_pause">已暂停</string>
+    <string name="mj_string_detail_open_app">打开APP</string>
+    <string name="mj_string_detail_instructions">特别说明</string>
+    <string name="mj_string_detail_instructions_no_install">本视频为全景资源，需要下载魔镜APP配合眼镜才能获得最佳沉浸观看体验，更有超多精彩全景内容，赶紧去下载魔镜尝鲜吧！</string>
+    <string name="mj_string_detail_instructions_installed">本视频为全景资源，需要打开魔镜APP配合眼镜才能获得最佳沉浸观看体验，更有超多精彩全景内容，赶紧去魔镜尝鲜吧！</string>
+    <string name="mj_string_detail_panorama_video">全景视频：</string>
+    <string name="mj_string_detail_video_source">视频来源：</string>
+    <string name="mj_string_detail_no_know">未知</string>
+    <string name="mj_string_detail_desc">简介</string>
+    <string name="mj_string_detail_download_app">下载魔镜APP</string>
+    <string name="mj_string_detail_download_watch">立即观看高清视频完整版 ></string>
+    <string name="mj_string_detail_download_open">点击前往魔镜APP观看完整版 ></string>
+    <string name="mj_string_network_not_connection">当前网络不可用</string>
+    <string name="mj_string_network_refresh">刷新</string>
+</resources>

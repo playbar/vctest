@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title高度-->
+    <dimen name="public_title_height">48dp</dimen>
+
+    <dimen name="line_width">0.67dp</dimen>
+
+    <!-- 详情 -->
+    <dimen name="mj_dimens_text_small">12sp</dimen>
+    <dimen name="mj_dimens_text_very_small">10sp</dimen>
+    <dimen name="mj_dimens_text_very_large">25sp</dimen>
+    <dimen name="mj_dimens_text_middle">16sp</dimen>
+    <dimen name="mj_dimens_text_large">20sp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

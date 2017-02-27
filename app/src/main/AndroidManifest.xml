@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.baofeng.mj.videoplugin">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+
+        <activity android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/app_transparent"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.GLIndexActivity"
+            android:label="横屏"
+            android:theme="@style/app_transparent"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ui.activity.MJVideoDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/app_transparent"
+            android:exported="true" />
+
+        <activity android:name=".ui.activity.ShadowPermissionActivity"/>
+
+        <service android:name="com.baofeng.mojing.sdk.download.service.MjDownloadService"/>
+
+        <meta-data
+            android:name="DEVELOPER_MERCHANT_ID"
+            android:value="C3983763445188321" />
+        <meta-data
+            android:name="DEVELOPER_APP_ID"
+            android:value="\04039857790255677" />
+        <meta-data
+            android:name="DEVELOPER_APP_KEY"
+            android:value="b6d2dceeca8720efc34dfb83b89fe2f5" />
+        <!--<meta-data-->
+            <!--android:name="DEVELOPER_CHANNEL_ID"-->
+            <!--android:value="com.baofeng.mj.videoplugin" />-->
+        <meta-data
+            android:name="DEVELOPER_CHANNEL_ID"
+            android:value="mj_bfyy" />
+    </application>
+
+</manifest>

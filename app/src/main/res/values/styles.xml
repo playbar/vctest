@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- application样式 -->
+    <style name="app_transparent" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    </style>
+
+    <!-- app title 标题返回键样式 -->
+    <style name="app_title_back_btn_style">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="wrap_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- app title 标题字体样式 -->
+    <style name="app_title_text_style" parent="@style/wrap_content_style">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">26</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 首页List名称字体样式  第一行-->
+    <style name="main_list_column_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10.67sp</item>
+    </style>
+
+    <!-- 首页List名称字体样式 第二行-->
+    <style name="main_list_column_text_style2">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11.33sp</item>
+    </style>
+
+    <style name="base_alertdialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="alertdialog" parent="base_alertdialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="dialog_white_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/dialog_white_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--详情页面 影片名字-->
+    <style name="panorama_detail_title_text_style" parent="@style/wrap_content_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+
+    <!--详情页面 其他介绍-->
+    <style name="panorama_detail_sub_text_style" parent="@style/wrap_content_style">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/prompt_color</item>
+    </style>
+
+    <!--详情页面 其他介绍-->
+    <style name="panorama_detail_sub_des_text_style" parent="@style/wrap_content_style">
+        <item name="android:textSize">13.33sp</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/prompt_color</item>
+    </style>
+
+    <!-- 全景详情页面 VR播放按钮 -->
+    <style name="panorama_detail_play_btn_style">
+        <item name="android:layout_width">165dp</item>
+        <item name="android:layout_height">36.7dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">13.33sp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="detail_title_text_style" parent="@style/wrap_content_style">
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">13.33sp</item>
+    </style>
+
+</resources>

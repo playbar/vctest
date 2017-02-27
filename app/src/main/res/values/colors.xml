@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="app_bg_color">#e7eaee</color>
+    <color name="app_title_blue">#007aea</color>
+
+
+    <!-- 详情 -->
+    <color name="mj_color_detail_blue">#007AEA</color>
+    <color name="mj_color_detail_message_black">#666666</color>
+    <color name="mj_color_detail_score_pink">#FF7F31</color>
+    <color name="mj_color_detail_gray">#E7EAEE</color>
+    <color name="mj_color_detail_contraller_background_gray">#bb000000</color>
+
+    <!--VI主色，如：导航栏、标签栏选中等-->
+    <color name="theme_main_color">#7a4fc9</color>
+    <!--主要信息文字用色，如：标题、名称等主要信息文字-->
+    <color name="title_color">#333333</color>
+    <!--次要文字信息用色，如：文章内容、简介等-->
+    <color name="content_color">#666666</color>
+    <!--提示性用色，如：推荐文案等-->
+    <color name="prompt_color">#999999</color>
+    <!--辅助色、操作或者提示用色，如：部分按钮和控件、提示类文字、标签等-->
+    <color name="auxiliary_yellow_color">#ff8a00</color>
+    <!--VI辅色，如：按钮等-->
+    <color name="theme_auxiliary_color">#388eab</color>
+    <!-- 字体灰色-->
+    <color name="btn_normal_color">#4682B4</color>
+</resources>

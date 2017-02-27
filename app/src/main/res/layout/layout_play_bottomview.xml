@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/mj_color_detail_contraller_background_gray">
+
+        <CheckBox
+            android:id="@+id/radio_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:button="@drawable/player_checkstatus"/>
+
+        <TextView
+            android:id="@+id/textview_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mj_dimens_text_small" />
+
+        <SeekBar
+            android:id="@+id/seekbar_progress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="18px"
+            android:minHeight="18px"
+            android:progressDrawable="@drawable/mjsdk_seekbar_img"
+            android:scrollbarStyle="outsideOverlay"
+            android:thumb="@drawable/mjsdk_thumb_ttpod"
+            android:thumbOffset="1px" />
+
+        <TextView
+            android:id="@+id/textview_all_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/mj_dimens_text_small"/>
+
+        <ImageButton
+            android:id="@+id/imagebtn_in_vr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            android:background="@null"
+            android:src="@mipmap/nav_icon_invr"/>
+    </LinearLayout>
+</RelativeLayout>

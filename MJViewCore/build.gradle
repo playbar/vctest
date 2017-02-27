@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
+apply plugin: 'signing'
+
+//group = GROUP
+//version = VERSION_NAME
+//status = 'debug'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        //multiDexEnabled true
+
+        ndk{
+//            platformVersion = 23
+            moduleName = 'viewcore'
+//            toolchain = 'clang'
+            stl         = 'gnustl_static'
+//            cppFlags.addAll(['-std=c++11', '-Wall', '-fno-rtti', '-fno-exceptions'])
+//            CFlags.addAll(['-Wall'])
+//            abiFilters.addAll(['armeabi'])
+            ldLibs 'android', 'log', 'GLESv3', 'EGL'
+            abiFilters "armeabi-v7a"
+        }
+
+    }
+    buildTypes {
+        release {
+            status = 'release'
+//            minifyEnabled true
+//            proguardFile 'proguard.cfg'
+        }
+    }
+    sourceSets.main{
+        jniLibs.srcDirs =['libs']
+//        assets.srcDirs = ['assets']
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+//repositories {
+//    flatDir {
+//        dirs 'libs'
+//    }
+//}
+dependencies {
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['**.*'], dir: 'libs')
+    compile files('libs/okhttp-3.0.0.jar')
+    compile files('libs/MojingDownloader.jar')
+    compile files('libs/okio-1.6.0.jar')
+}
+
+

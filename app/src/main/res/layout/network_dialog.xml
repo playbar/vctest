@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="20dp"
+    style="@style/dialog_white_bg">
+
+    <TextView
+        android:id="@+id/dialog_tips"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/dialog_network_tips"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/content_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_below="@id/dialog_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/dialog_cancal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:textColor="@color/dark_grey_purple_bg_color"
+            android:text="@string/dialog_cancal"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/dialog_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_download_now"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/theme_main_color"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
